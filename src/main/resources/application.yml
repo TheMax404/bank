@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "Fabric bank"
+
+
+fabrick:
+  sandbox:
+    base-url: https://sandbox.platfr.io
+    time-zone: Europe/Rome
+    api-key: FXOVVXXHVCPVPBZXIJOBGUGSKHDNFRRQJP
+    auth-schema: S2S
+    paths:
+      balance: /api/gbs/banking/v4.0/accounts/{accountId}/balance
+      transactions: /api/gbs/banking/v4.0/accounts/{accountId}/transactions
+      money-transfer: /api/gbs/banking/v4.0/accounts/{accountId}/payments/money-transfers
